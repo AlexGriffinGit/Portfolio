@@ -1,7 +1,12 @@
 body {
     font-size: 14px;
     color: #cccccc;
-    background-color: #19181a;
+    background-color: #19181A;
+}
+
+h2 {
+    color: #cccccc;
+    background-color: #19181A;
 }
 
     
