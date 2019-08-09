@@ -1,13 +1,10 @@
 body {
-    font-size: 14px;
-    color: #cccccc;
     background-color: #19181A;
+    color: #cccccc;
+    font-size: 14px;   
 }
 
 h2 {
-    color: #cccccc;
     background-color: #19181A;
-}
-
-    
-    
+    color: #cccccc;
+} 
