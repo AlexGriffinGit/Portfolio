@@ -87,7 +87,7 @@ li a:hover {
  background-size: cover;
  text-decoration: none;
  color: transparent;
- box-shadow: 5px 5px 3px 1px ##333035
+ box-shadow: 5px 5px 3px 1px ##333035;
 }
  
 #diePoor:hover { 
