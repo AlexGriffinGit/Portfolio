@@ -45,11 +45,11 @@ ul {
   background-color: #19181A;
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 2%;
    }
   
 li {
   float: left;
+  margin-bottom: 2%;
    }
 
 li a {
@@ -58,6 +58,7 @@ li a {
   text-align: center;
   padding: 14px 150px;
   text-decoration: none;
+  margin-bottom: 2%;
      }
 
 li a:hover {
