@@ -92,7 +92,7 @@ li a:hover {
 }
  
 #diePoor:hover { 
-height: 350px;
+height: 300px;
 color: #cccccc;
 }
   
@@ -113,11 +113,14 @@ color: #cccccc;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
 
 #dwelling:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
 
 #crowdSim {
@@ -137,11 +140,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
 
 #crowdSim:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
   
 #whiteRiver {
@@ -161,11 +167,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
   
 #whiteRiver:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
   
 #box {
@@ -185,11 +194,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
 
 #box:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
   
 #odbarEngine {
@@ -209,11 +221,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
   
 #odbarEngine:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
   
 #directX {
@@ -233,11 +248,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
 
 #directX:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
   
 #chatroom {
@@ -257,11 +275,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
 
 #chatroom:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
   
 #rayTrace {
@@ -281,11 +302,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
   
 #rayTrace:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
   
 #website {
@@ -305,11 +329,14 @@ height: 350px;
  background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
+ text-decoration: none;
+ color: transparent;
  box-shadow: 5px 5px 1px 2px #3f3d42;
 }
   
 #website:hover { 
-height: 350px;
+height: 300px;
+color: #cccccc;
 }
 
 #indexBoxText {
