@@ -296,6 +296,7 @@ height: 350px;
 /* Formatting for the About page*/
 
 #selfPicture {
+ display: inline-block;
  float: left;
  margin-left: 4%;
  margin-bottom: 2%;
@@ -303,5 +304,6 @@ height: 350px;
 
 #aboutTextBody {
   margin-right: 4%;
+  margin-left: 2%;
 }
 
