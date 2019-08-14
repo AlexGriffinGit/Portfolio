@@ -296,17 +296,12 @@ height: 350px;
 /* Formatting for the About page*/
 
 #selfPicture {
- box-sizing: border-box;
- width: 15%;
  float: left;
- margin-left: 5%;
+ margin-left: 4%;
  margin-bottom: 2%;
 }
 
 #aboutTextBody {
-  box-sizing: border-box;
-  margin-right: 5%;
-  width: 70%;
-  float: right;
+  margin-right: 4%;
 }
 
