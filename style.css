@@ -300,3 +300,10 @@ height: 350px;
  margin-left: 4%;
  margin-bottom: 3%;
 }
+
+#aboutTextBody {
+  margin-left: 3%;
+  float: right;
+  line-height: 1.3;
+}
+
