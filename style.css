@@ -296,7 +296,7 @@ height: 350px;
 
 #selfPicture {
  box-sizing: border-box;
- width: 20%;
+ width: 25%;
  float: left;
  clear: left;
  margin-left: 4%;
@@ -306,6 +306,7 @@ height: 350px;
 #aboutTextBody {
   box-sizing: border-box;
   margin-left: 3%;
+  margin-right: 4%;
   line-height: 1.3;
 }
 
