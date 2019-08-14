@@ -17,6 +17,7 @@ body {
 
 p {
   margin-bottom: 2%;
+  line-height: 1.4;
 }
 
 /* Heading formatting for titles and subtitles */
@@ -296,17 +297,16 @@ height: 350px;
 
 #selfPicture {
  box-sizing: border-box;
- width: 25%;
+ width: 15%;
  float: left;
- clear: left;
- margin-left: 4%;
- margin-bottom: 3%;
+ margin-left: 5%;
+ margin-bottom: 2%;
 }
 
 #aboutTextBody {
   box-sizing: border-box;
-  margin-left: 3%;
-  margin-right: 4%;
-  line-height: 1.3;
+  margin-right: 5%;
+  width: 70%;
+  float: right;
 }
 
