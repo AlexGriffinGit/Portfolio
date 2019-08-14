@@ -304,6 +304,7 @@ height: 350px;
 }
 
 #aboutTextBody {
+  box-sizing: border-box;
   margin-left: 3%;
   line-height: 1.3;
 }
