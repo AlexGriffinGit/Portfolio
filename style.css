@@ -295,6 +295,7 @@ height: 350px;
 /* Formatting for the About page*/
 
 #selfPicture {
+ box-sizing: border-box;
  width: 20%;
  float: left;
  clear: left;
