@@ -70,6 +70,22 @@ li a:hover {
   background-color: #333333;
            }
 
+a.externalLinks:link {
+  color: #d6d6d6;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a.externalLinks:visited {
+  color: #e0cccc;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a.externalLinks:hover {
+  color: #9c5f5f;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 /* Formatting for the Index page anbd the links on them */ 
 #diePoor {
  box-sizing: border-box;
