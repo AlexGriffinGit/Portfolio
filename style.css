@@ -101,8 +101,8 @@ a.externalLinks:hover {
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 22%;
-  padding: 5px;
+  width: 24%;
+  padding: 6px;
 }
 
 /* Style the images inside the grid */

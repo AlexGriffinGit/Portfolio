@@ -20,6 +20,42 @@
   <li><a href="cv.html">View My CV</a></li>
 </ul>
  
+ <!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="Images/Pages/RayTrace/Form.png" alt="Form used for setting values of the spheres" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Images/Pages/RayTrace/FileName.png" alt="Inputting file name that was created in the form" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Images/Pages/RayTrace/RenderProg.png" alt="Progress of the render" style="width:80%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Images/Pages/RayTrace/Spheres.png" alt="one finished frame of the render" style="width:80%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:70%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<footer>
+  <p>The image gallery used is from a tutorial on w3schools</p>
+   <a href="https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp" class="externalLinks">The tutorial and code can be found here</a>
+ </footer>
 
 </body>
 </html>
