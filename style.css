@@ -440,13 +440,3 @@ color: #cccccc;
 	font-size: 14px;
 	bottom: 5;
 }
-
-.spoiler { 
-  color: #cccccc; 
-  background-color:#cccccc;
-}
-
-.spoiler:hover{
-  background-color: #19181A;
-  }
-
