@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 <head>
-	<title>About Me</title>
-	<link rel="stylesheet" href="style.css">
+<title>About Me</title>
+<link rel="stylesheet" href="style.css">
  
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+ 
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
  
 </head>
 	
@@ -22,33 +25,69 @@
 	
 	<article>
 		<section id="selfPicture">
-			<img src="PictureOfMe.png" width="449" height="414" alt="Alex Griffin">
+			<img src="Images/PictureOfMe2.png" id = "imageMyself" width="390" height="416" alt="Me in Belgium" title="Me in Belgium" onclick="changeImage(); toggleText()">
+			<p id= "hiddenText" style="display:none"> I've got glasses now, in case you wanted an explanation </p>
 		</section>
 		
 		<section id="aboutTextBody">
 			<p>
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
-				My name is Alex Griffin, that's all you need to know, My name is Alex Griffin, that's all you need to know,
+				Hi I'm Alex, and as you might have learnt I've just graduated from Staffordshire University with a Computer Games Programming degree.
+				Now I'm looking for the next step of my career.
+				<br>
+				<br>
+				I enjoy programming and writing code and love seeing my vision for projects start to take shape (in fact that's what I loved about making this portfolio), even if most 
+				of my projects are still plagued by programmer art, see project pages for examples.
+				<br>
+				Most of my time at university was geared towards the game side of programming. I thoroughly enjoy developing interesting ideas and mechanics for all types of games and
+				I believe I can bring those interesting ideas and passion to a business environment.
+				<br>
+				<br>
+				I'm most comfortable using C++ and C# and like the experience that Unity provides but I'm open to all opportunities and would use any
+				chance to expand my existing skillset.  
+				<br>
+				I'm currently learning Javascript and Python and am enjoying how versatile and flexible they are.
+				<br>
+				<br>
+				If you'd like to see my CV you can click
+				<a href="cv.html" class="externalLinks">here</a>.
+				<br>
+				<br>
+				Or if you'd like to get in contact with me and learn even more you can click
+				<a href="contact.html" class="externalLinks">here</a>.				
 				<p/>
 		</section>
 		
 	</article>
-	
+
+	<script>
+            var image =  document.getElementById("imageMyself");
+			var text = document.getElementById("hiddenText");
+
+            function changeImage()
+            {
+                if (image.getAttribute('src') == "Images/PictureOfMe2.png")
+                {
+                    image.src = "Images/PictureOfMe2Alt.png";
+                }
+                else
+                {
+                    image.src = "Images/PictureOfMe2.png";
+                }
+            }
+			
+			function toggleText() 
+			{
+				if (text.style.display === "none") 
+				{
+					text.style.display = "block";
+				} 
+				else 
+				{
+					text.style.display = "none";
+				}
+			}
+			
+	</script>
  
 </body>
 </html>

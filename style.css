@@ -75,7 +75,7 @@ footer {
  text-align: center;
  position:absolute;
  left:0px;
- bottom:20px;
+ bottom:10px;
  height:30px;
  width:100%;
  font-size: 14px;
@@ -427,10 +427,26 @@ color: #cccccc;
  float: left;
  margin-left: 4%;
  margin-bottom: 2%;
+ padding-right: 2%;
 }
 
 #aboutTextBody {
   margin-right: 4%;
   margin-left: 2%;
 }
+
+#hiddenText {
+	position: absolute;
+	font-size: 14px;
+	bottom: 5;
+}
+
+.spoiler { 
+  color: #cccccc; 
+  background-color:#cccccc;
+}
+
+.spoiler:hover{
+  background-color: #19181A;
+  }
 
