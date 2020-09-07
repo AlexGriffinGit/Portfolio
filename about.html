@@ -7,8 +7,8 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
  
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/webp" sizes="32x32" href="/favicon-32x32.webp">
+<link rel="icon" type="image/webp" sizes="16x16" href="/favicon-16x16.webp">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
  
 </head>
@@ -26,7 +26,7 @@
 	
 	<article>
 		<section id="selfPicture">
-			<img src="Images/PictureOfMe2.png" id = "imageMyself" width="390" height="416" alt="Me in Belgium" title="Me in Belgium" onclick="changeImage(); toggleText()">
+			<img src="Images/PictureOfMe2.webp" id = "imageMyself" width="390" height="416" alt="Me in Belgium" title="Me in Belgium" onclick="changeImage(); toggleText()">
 			<p id= "hiddenText" style="display:none"> I've got glasses now, in case you wanted an explanation </p>
 		</section>
 		
@@ -65,13 +65,13 @@
 
             function changeImage()
             {
-                if (image.getAttribute('src') == "Images/PictureOfMe2.png")
+                if (image.getAttribute('src') == "Images/PictureOfMe2.webp")
                 {
-                    image.src = "Images/PictureOfMe2Alt.png";
+                    image.src = "Images/PictureOfMe2Alt.webp";
                 }
                 else
                 {
-                    image.src = "Images/PictureOfMe2.png";
+                    image.src = "Images/PictureOfMe2.webp";
                 }
             }
 			
