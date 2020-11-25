@@ -17,6 +17,8 @@ body {
 
 p {
   margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
   line-height: 1.4;
 }
 
@@ -53,7 +55,7 @@ ul {
    }
   
 li {
-  float: left;
+  float: center;
   margin-bottom: 2%;
    }
 
@@ -68,7 +70,15 @@ li a {
 
 li a:hover {
   background-color: #333333;
-           }
+           } 
+ol {
+	margin-bottom: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+	list-style-position: inside;
+	list-style-type: square;
+	overflow: auto;
+}
 
 footer { 
  display: block;
@@ -112,6 +122,22 @@ a.externalLinks:hover {
 }
 
 .column img:hover {
+  opacity: 1;
+}
+
+.column2 {
+  float: left;
+  width: 14%;
+  padding: 0px;
+}
+
+/* Style the images inside the grid */
+.column2 img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column2 img:hover {
   opacity: 1;
 }
 

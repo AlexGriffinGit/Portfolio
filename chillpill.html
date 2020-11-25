@@ -23,5 +23,79 @@
   <li><a href="cv.html" class="pageLinks">View My CV</a></li>
 </ul>
 
+<!-- The four columns -->
+<div class="row">
+  <div class="column2">
+    <img src="Images/Pages/ChillPill/MenuScreen.webp" alt="Chill Pill title screen" style="width:92%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Images/Pages/ChillPill/ShotScreen.webp" alt="Chill Pill shooting" style="width:92%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Images/Pages/ChillPill/HitScreen.webp" alt="Chill Pill scoring" style="width:92%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Images/Pages/ChillPill/MissScreen.webp" alt="Chill Pill missing" style="width:92%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Images/Pages/ChillPill/TimeTrialScreen.webp" alt="Chill Pill time trial screen" style="width:92%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Images/Pages/ChillPill/GameOverScreen.webp" alt="Chill Pill game over screen" style="width:92%" onclick="myFunction(this);">
+  </div>
+  <div class="column2">
+    <img src="Images/Pages/ChillPill/StatsScreen.webp" alt="Chill Pill stats screen" style="width:92%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:35%">
+  <div id="imgtext"></div>
+</div>
+
+<br>
+<br>
+
+<p>
+Chill Pill is a mobile physics-based arcade game that I developed in my free time during the UKs national lockdown. 
+Like many of my projects it was developed in the Unity game engine and programmed in C#. 
+It was built for the Android operating system and is available on the Google Play App Store. 
+The game started as me testing things out in Unity and I added mechanics and features from there, 
+that explains why the theme is bizarre and abstract.
+<br>
+<br>
+The gameplay consists of the player flicking the screen in order to launch a pill into a goal (which is just a box). 
+It consists of four different game modes which are:
+<br>
+</p>
+<ol>
+	<li> <b>Classic:</b> Starts with easy levels and gradually progresses to include more difficult obstacles, no time limit or fail conditions. 
+		 Has a clear end level but the player can carry on if they desire.</li>
+	<li> <b>Free play:</b> Can be used as a form of practice as it is a level endlessly repeated, 
+		 has 4 different difficulties which each relate to the level that is endlessly repeated, no time limit or fail conditions.</li>
+	<li> <b>Time trial:</b> The goal is to get as far as possible in the 60 seconds provided, 
+		 starts from the easiest level and ends when the time is up. Doesn’t have any fail conditions.</li>
+	<li> <b>Hardcore:</b> The same levels as classic with a clear end point and no time limit, 
+		 however if one of the shots misses the game ends, it’s very unforgiving.</li>
+</ol>
+<p>
+The game can be downloaded or viewed from the Google Play App Store by clicking <b><a href="https://play.google.com/store/apps/details?id=com.AlexGriffin.ChillPill" class="externalLinks">here</a>.</b>
+<br>
+You can learn more about the game by going <b><a href="https://chillpill.alexgriffin.dev/" class="externalLinks">here</a>.</b>
+<br>
+There’s also a trailer available on YouTube <b><a href="https://www.youtube.com/watch?v=3NfYaKCnqFc" class="externalLinks">here</a>.</b>
+</p>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
 </body>
 </html>
