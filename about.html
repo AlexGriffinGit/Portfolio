@@ -24,69 +24,8 @@
   	<li><a href="cv.html">View My CV</a></li>
 	</ul>
 	
-	<article>
-		<section id="selfPicture">
-			<img src="Images/PictureOfMe2.webp" id = "imageMyself" width="390" height="416" alt="Me in Belgium" title="Me in Belgium" onclick="changeImage(); toggleText()">
-			<p id= "hiddenText" style="display:none"> I've got glasses now, in case you wanted an explanation </p>
-		</section>
-		
-		<section id="aboutTextBody">
-			<p>
-				Hi I'm Alex, and as you might have learnt I've just graduated from Staffordshire University with a Computer Games Programming degree.
-				Now I'm looking for the next step of my career.
-				<br>
-				<br>
-				I enjoy programming and writing code and love seeing my vision for projects start to take shape (in fact that's what I loved about making this portfolio), even if most 
-				of my projects are still plagued by programmer art, see project pages for examples.
-				<br>
-				Most of my time at university was geared towards the game side of programming. I thoroughly enjoy developing interesting ideas and mechanics for all types of games and
-				I believe I can bring those interesting ideas and passion to a business environment.
-				<br>
-				<br>
-				I'm most comfortable using C++ and C# and like the experience that Unity provides but I'm open to all opportunities and would use any
-				chance to expand my existing skillset.  
-				<br>
-				I'm currently making a mobile game in Unity called Chill Pill, I'm looking at learning Javascript and Python as they're versatile and flexible.
-				<br>
-				<br>
-				If you'd like to see my CV you can click
-				<a href="cv.html" class="externalLinks">here</a>.
-				<br>
-				<br>
-				Or if you'd like to get in contact with me and learn even more you can click
-				<a href="contact.html" class="externalLinks">here</a>.				
-				<p/>
-		</section>
-	</article>
+	
 
-	<script>
-            var image =  document.getElementById("imageMyself");
-			var text = document.getElementById("hiddenText");
-
-            function changeImage()
-            {
-                if (image.getAttribute('src') == "Images/PictureOfMe2.webp")
-                {
-                    image.src = "Images/PictureOfMe2Alt.webp";
-                }
-                else
-                {
-                    image.src = "Images/PictureOfMe2.webp";
-                }
-            }
-			
-			function toggleText() 
-			{
-				if (text.style.display === "none") 
-				{
-					text.style.display = "block";
-				} 
-				else 
-				{
-					text.style.display = "none";
-				}
-			}
-			
-	</script>
+	
 </body>
 </html>

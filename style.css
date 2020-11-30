@@ -8,7 +8,7 @@ html {
 
 /* Main formatting for the majority of page text*/
 body {
-    background-color: #19181A;
+    background-color: #2e2e30;
     color: #cccccc;
     font-family: 'Montserrat','Open Sans', 'Helvetica', 'Arial',  sans-serif;
     font-size: 18px;   
@@ -22,13 +22,11 @@ p {
 
 /* Heading formatting for titles and subtitles */
 h1 {
-   background-color: #19181A;
    color: #cccccc;
    text-align: center;
    }
   
 h2 {
-   background-color: rgba(0,0,0,0);
    color: #cccccc;
    margin: 15px;
    padding: 12px;
@@ -36,39 +34,12 @@ h2 {
    }
   
 h3 {
-   background-color: #19181A;
    color: #cccccc;
    text-align: center;
    }
    
 /* Formatting for the page links at the top of the page */
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #19181A;
-  display: flex;
-  justify-content: space-evenly;
-   }
-  
-li {
-  float: left;
-  margin-bottom: 2%;
-   }
 
-li a {
-  display: block;
-  color: #cccccc;
-  text-align: center;
-  padding: 14px 150px;
-  text-decoration: none;
-  margin-bottom: 2%;
-     }
-
-li a:hover {
-  background-color: #333333;
-           }
 
 footer { 
  display: block;
@@ -79,6 +50,11 @@ footer {
  height:30px;
  width:100%;
  font-size: 14px;
+}
+
+.caption h4 {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
 a.externalLinks:link {
@@ -95,381 +71,4 @@ a.externalLinks:hover {
   color: #9c5f5f;
   background-color: transparent;
   text-decoration: underline;
-}
-
-/* Image Gallery CSS,  Code comes from https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp */
-/* The grid: Four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 24%;
-  padding: 6px;
-}
-
-/* Style the images inside the grid */
-.column img {
-  opacity: 0.8; 
-  cursor: pointer; 
-}
-
-.column img:hover {
-  opacity: 1;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* The expanding image container */
-.container {
-  position: relative;
-  display: none;
-}
-
-/* Expanding image text */
-#imgtext {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: white;
-  font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  color: white;
-  font-size: 35px;
-  cursor: pointer;
-}
-
-/* Formatting for the Index page anbd the links on them */ 
-#diePoor {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: left;
- margin-right: 4%;
- margin-left: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;
- clear: left;
- background-image: url(Images/Index/WeAllDiePoor.webp);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
- 
-#diePoor:hover { 
-height: 300px;
-color: #cccccc;
-}
-  
-#dwelling {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: right;
- margin-left: 4%;
- margin-right: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: right;
- background-image: url(Images/Index/Dwelling.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-
-#dwelling:hover { 
-height: 300px;
-color: #cccccc;
-}
-
-#crowdSim {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: left;
- margin-right: 4%;
- margin-left: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: left;
- background-image: url(Images/Index/CrowdSimulation.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-
-#crowdSim:hover { 
-height: 300px;
-color: #cccccc;
-}
-
-/* Commented out as not being worked on at the moment
-
-#whiteRiver {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: right;
- margin-left: 4%;
- margin-right: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: right;
- background-image: url(Images/Index/ComingSoon.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-  
-#whiteRiver:hover { 
-height: 300px;
-color: #cccccc;
-}
-
-*/
-
-/* Chill Pill replaces Camp White River */ 
-
-#chillPill {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: right;
- margin-left: 4%;
- margin-right: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: right;
- background-image: url(Images/Index/ChillPillFeatureGraphicPortfolio.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-  
-#chillPill:hover { 
-height: 300px;
-color: #cccccc;
-}
-
-#box {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: left;
- margin-right: 4%;
- margin-left: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: left;
- background-image: url(Images/Index/Box.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-
-#box:hover { 
-height: 300px;
-color: #cccccc;
-}
-  
-#odbarEngine {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: right;
- margin-left: 4%;
- margin-right: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: right;
- background-image: url(Images/Index/ODBAR.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-  
-#odbarEngine:hover { 
-height: 300px;
-color: #cccccc;
-}
-  
-#directX {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: left;
- margin-right: 4%;
- margin-left: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear:left;
- background-image: url(Images/Index/DirectX.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-
-#directX:hover { 
-height: 300px;
-color: #cccccc;
-}
-  
-#chatroom {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: right;
- margin-left: 4%;
- margin-right: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: right;
- background-image: url(Images/Index/ChatRoom.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-
-#chatroom:hover { 
-height: 300px;
-color: #cccccc;
-}
-  
-#rayTrace {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: left;
- margin-right: 4%;
- margin-left: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear:left;
- background-image: url(Images/Index/RayTrace.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-  
-#rayTrace:hover { 
-height: 300px;
-color: #cccccc;
-}
-  
-#website {
- box-sizing: border-box;
- width: 43%;
- height: 75px;
- float: right;
- margin-left: 4%;
- margin-right: 3%;
- margin-bottom: 2%;
- transition: height 2s, color 1.5s;;
- background-color: #2F2F30;
- clear: right;
- background-image: url(Images/Index/Website.webp);
- color: rgba(47,47,48,0.2);
- background-color: rgba(47,47,48,0.2);
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- text-decoration: none;
- color: transparent;
- box-shadow: 5px 5px 1px 2px #3f3d42;
-}
-  
-#website:hover { 
-height: 300px;
-color: #cccccc;
-}
-
-#indexBoxText {
-  padding: 12px;
-}
-
-/* Formatting for the About page*/
-
-#selfPicture {
- display: inline-block;
- float: left;
- margin-left: 4%;
- margin-bottom: 2%;
- padding-right: 2%;
-}
-
-#aboutTextBody {
-  margin-right: 4%;
-  margin-left: 2%;
-}
-
-#hiddenText {
-	position: absolute;
-	font-size: 14px;
-	bottom: 5;
 }

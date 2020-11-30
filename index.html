@@ -1,71 +1,311 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 <head>
-<title>Alex Griffins Portfolio</title>
-<link rel="stylesheet" href="style.css">
- 
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
- 
-<link rel="icon" type="image/webp" sizes="32x32" href="/favicon-32x32.webp">
-<link rel="icon" type="image/webp" sizes="16x16" href="/favicon-16x16.webp">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Alex Griffins Portfolio</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="style.css"> -->
+<link rel="stylesheet" href="Bootstrap Theme.css">
+ 
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> -->
+ 
 </head>
 <body>
 
-<h1>Alex Griffin</h1>
-<h3>Welcome to my portfolio</h3>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About Me</a></li>
-  <li><a href="contact.html">Contact Me</a></li>
-  <li><a href="cv.html">View My CV</a></li>
-</ul>
- 
-<p>
- HI, I'm a recent Graduate from Staffordshire University. 
- My time at university was spent studying Computer Games Programming, these are some of the 
- projects I have worked on in university and in my spare time.
- Please have a look through and don't hesitate to get in contact with me if you have any questions.
- <br>Get comfortable and thanks for taking the time to look through my work.
- </p>
- 
-<article>
- <a href="diepoor.html">
-  <section id="diePoor">
-   <h2>We All Die Poor</h2>
-   <p id="indexBoxText">
-    We All Die Poor is a 2D wave survival game that was created during the 2018 Ukie Student Games Jam 
-    at Staffordshire University by me and 4 of my friends. The game jam theme that year was <b>change</b>, our 
-    team took this literally and we decided to make a mathmatical based game based on shooting the correct amount of change 
-    (pounds and pence) to defeat enemies.
-   </p>
-  </section>
- </a>
+  <nav id="mainNavBar" class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+
+    <!-- brand-->
+    <a class="navbar-brand text-light" href="#welcome">Alex Griffin</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown active px-4">
+        <a class="nav-link dropdown-toggle " href="#projects" id="navbardrop" data-toggle="dropdown">
+          Projects
+        </a>
+        <div class="dropdown-menu bg-dark">
+          <a class="dropdown-item text-light bg-dark" href="diepoor.html">We All Die Poor</a>
+          <a class="dropdown-item text-light bg-dark" href="dwelling.html">Dwellings</a>
+          <a class="dropdown-item text-light bg-dark" href="crowdsim.html">Crowd Simulation App</a>
+          <a class="dropdown-item text-light bg-dark" href="chillpill.html">Chill Pill</a>
+          <a class="dropdown-item text-light bg-dark" href="box.html">Box</a>
+          <a class="dropdown-item text-light bg-dark" href="odbarengine.html">ODBAR Engine</a>
+          <a class="dropdown-item text-light bg-dark" href="directx.html">DirectX Cubes</a>
+          <a class="dropdown-item text-light bg-dark" href="chatroom.html">Simple Chatroom</a>
+          <a class="dropdown-item text-light bg-dark" href="raytrace.html">Ray Tracing</a>
+          <a class="dropdown-item text-light bg-dark" href="website.html">This Portfolio</a>
+          <a class="dropdown-item disabled text-light bg-dark" href="">Fodder (In Development)</a>
+        </div>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link" href="#about">About Me</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link" href="#contact">Contact Me</a>
+      </li>
+      <li class="nav-item px-4">
+        <a class="nav-link" href="#cv">View My CV</a>
+      </li>
+    </ul>
+  </nav>
+
+    <div class="jumbotron">
+      <h1 id="welcome" class="display-3">Welcome to my portfolio</h1>
+      <p class="lead">HI, I'm a recent Graduate from Staffordshire University. 
+        My time at university was spent studying Computer Games Programming, these are some of the 
+        projects I have worked on in university and in my spare time.</p>
+      <hr class="my-4">
+      <p>Please have a look through and don't hesitate to get in contact with me if you have any questions.
+        <br>Get comfortable and thanks for taking the time to look through my work.</p>
+      <a class="btn btn-warning btn-lg" href="#about" role="button">Learn more about me</a>
+    </div>
   
- <a href="dwelling.html">
-  <section id="dwelling">
-   <h2>Dwellings</h2>
-   <p id="indexBoxText">
-    Dwellings is a needs simulator revolving around surviving as someone who is living rough. 
-    Dwellings was conceived and created during the Global Game Jam 2019 at Staffordshire University by me and 4 of my friends. 
-    The theme for the game jam was <b>What Home Means To You</b>, our team took this in a different direction and focused
-    on the hardships of people who are not so fortunate and are without a home.
-   </p>
-  </section>
- </a>
+    <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+      <h1 id="projects" class="display-2" style="text-align: center;">My Projects</h1>
+      <br>
+      <ol class="carousel-indicators">
+        <li data-target="#projectCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#projectCarousel" data-slide-to="1"></li>
+        <li data-target="#projectCarousel" data-slide-to="2"></li>
+        <li data-target="#projectCarousel" data-slide-to="3"></li>
+        <li data-target="#projectCarousel" data-slide-to="4"></li>
+        <li data-target="#projectCarousel" data-slide-to="5"></li>
+        <li data-target="#projectCarousel" data-slide-to="6"></li>
+        <li data-target="#projectCarousel" data-slide-to="7"></li>
+        <li data-target="#projectCarousel" data-slide-to="8"></li>
+        <li data-target="#projectCarousel" data-slide-to="9"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/Index/WeAllDiePoor.webp" class="d-block mx-auto" alt="We All Die Poor">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>We All Die Poor</h4>
+            <p>We All Die Poor is a 2D wave survival game that was created during the 2018 Ukie Student Games Jam 
+              at Staffordshire University by me and 4 of my friends. The game jam theme that year was <b>change</b>, our 
+              team took this literally and we decided to make a mathematical based game based on shooting the correct amount of change 
+              (pounds and pence) to defeat enemies.</p>
+              <a class="btn btn-warning btn-lg" href="diepoor.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/Dwelling.webp" class="d-block mx-auto" alt="Dwelling">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Dwelling</h4>
+            <p>Dwellings is a needs simulator revolving around surviving as someone who is living rough. 
+              Dwellings was conceived and created during the Global Game Jam 2019 at Staffordshire University by me and 4 of my friends. 
+              The theme for the game jam was <b>What Home Means To You</b>, our team took this in a different direction and focused
+              on the hardships of people who are not so fortunate and are without a home.</p>
+              <a class="btn btn-warning btn-lg" href="dwelling.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/ChillPillFeatureGraphicPortfolio.webp" class="d-block mx-auto" alt="Chill Pill">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Chill Pill</h4>
+            <p>Chill Pill is a physics based mobile arcade game developed in the Unity Game Engine.
+              It was developed in my spare time during lockdown, I started development around the end of April
+              and released it on the Google Play Store on the 17th of June. The game play is very simplistic and arcadey 
+              and was designed to be picked up and put down easily.</p>
+              <a class="btn btn-warning btn-lg" href="chillpill.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/CrowdSimulation.webp" class="d-block mx-auto" alt="Crowd Simulation App">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Crowd Simulation Android App</h4>
+            <p>This Crowd Simulation Android App was developed by me for use in one of my university modules. 
+              It models basic AI crowd simulation algorithms running on an Android Device. 
+              It was created using the Unity Game Engine.</p>
+              <a class="btn btn-warning btn-lg" href="crowdsim.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/Box.webp" class="d-block mx-auto" alt="Box">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Box</h4>
+            <p>Box is a 2D physics platformer created using the ODBAR Engine (See ODBAR Engine listing). 
+              Box has the player take control of a sentient box trying to escape an abandoned underwater research facility. 
+              The facility is full of hazards that the player has to carefully dodge and avoid.</p>
+              <a class="btn btn-warning btn-lg" href="box.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/ODBAR.webp" class="d-block mx-auto" alt="ODBAR Engine">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>ODBAR Engine</h4>
+            <p>The ODBAR Engine is a game engine that was developed as part of a work simulation module during my time at Staffordshire University. 
+              The ODBAR Engine is primarily aimed at developing platformers, it includes many features that can be used for different types of platformers.</p>
+              <a class="btn btn-warning btn-lg" href="odbarengine.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/DirectX.webp" class="d-block mx-auto" alt="Direct X Cubes">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Cubes in DirectX</h4>
+            <p>DirectX</p>
+              <a class="btn btn-warning btn-lg" href="directx.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/ChatRoom.webp" class="d-block mx-auto" alt="Simple Chatroom Program">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Simple Chatroom Program</h4>
+            <p>This simple chatroom project was written in C# and consists of a simple server and client. 
+              These client applications communicate through the server and are able to send and receive messages sent from other client applications. 
+              Each client instance is also able to set a nickname for themselves.</p>
+              <a class="btn btn-warning btn-lg" href="chatroom.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/RayTrace.webp" class="d-block mx-auto" alt="Raytracing and Memory Management Program">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>Ray Tracing and Memory Management</h4>
+            <p>C++ Memory management and Ray Tracing</p>
+              <a class="btn btn-warning btn-lg" href="raytrace.html" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-size: cover;">
+          <img src="Images/Index/Website.webp" class="d-block mx-auto" alt="This Portfolio">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>This Website</h4>
+            <p>This website, both Bootstrap and vanilla HTML and CSS versions</p>
+              <a class="btn btn-warning btn-lg" href="website.html" role="button">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <br>
+ 
+ <div class="jumbotron">
+  <h1 id="about" class="display-2">About Me</h1>
+  <p class="lead">
+    Hi I'm Alex, and as you might have learnt I've just graduated from Staffordshire University with a Computer Games Programming degree.
+    Now I'm looking for the next step of my career.
+    </p>
+    <br>
+  <div class="row">
+    <div class="col-4">
+      <img src="Images/PictureOfMe2.webp" id="imageMyself" class="figure-img rounded d-block mx-auto" alt="Me in Belgium" style="max-width: 75%" title="Me in Belgium" onclick="changeImage(); toggleText()">
+      <figcaption id="meCaption" class="figure-caption" style="text-align: center;">Me in Belgium</figcaption>
+    </div>
+    <div class="col-8">
+      <hr class="my-5">
+      <p class="text-center mr-5">
+    I enjoy programming and writing code and love seeing my vision for projects start to take shape (in fact that's what I loved about making this portfolio), even if most 
+    of my projects are still plagued by programmer art, see project pages for examples.
+    <br>
+    <br>
+    Most of my time at university was geared towards the game side of programming. I thoroughly enjoy developing interesting ideas and mechanics for all types of games and
+    I believe I can bring those interesting ideas and passion to a business environment.
+    <br>
+    <br>
+    I'm most comfortable using C++ and C# and like the experience that Unity provides but I'm open to all opportunities and would use any
+    chance to expand my existing skillset.  
+    <br>
+    I'm currently making a mobile game in Unity called Chill Pill, I'm looking at learning Javascript and Python as they're versatile and flexible.
+    <br>
+    <br>
+     If you'd like to see my CV you can click
+    <a href="#cv" class="externalLinks">here</a>.
+    <br>
+    <br>
+    Or if you'd like to get in contact with me and learn even more you can click
+    <a href="#contact" class="externalLinks">here</a>.				
+      </p>
+    </p>
+    </div>
+  </div>
+</div>
+
+    <br>
+    <h1 id="contact" class="display-2" style="text-align: center;">Contact Me</h1>
+    <p style="text-align: center;">
+      If you're interested in getting to know more about me or have an opportunity that you think I'd be a good fit for please get in contact. <br>	
+      <br>
+      You can send me an email here	<br>
+      <a href="mailto:inquiries@alexgriffin.dev" class="externalLinks"><b>inquiries@alexgriffin.dev</b> </a> <br>
+      <br>
+      Or give me a call here	<br>
+      <b>07914037105</b> <br>
+      <br>
+      You can view my Linkedin profile
+      <br>
+      <a href="https://www.linkedin.com/in/alexgriffindev/" class="externalLinks"><b>Here</b> </a> <br>
+      <br>
+      You can also fill out the form below and send it off.
+      <br>
+      I'll get back to you as quick as I can.
+      <br>
+      <br>
+     </p>
+
+     <form class="" action="https://formspree.io/f/xnqobbya" method="POST" enctype="multipart/form-data">
+        <div class="form-group px-5">
+          <div class="form-row">
+            <div class="col">
+              <label for="inputName">Your Name: </label>
+              <input id="inputName" type="text" class="form-control" placeholder="Name...">
+            </div>
+            <div class="col">
+              <label for="inputEmail">Your Email: </label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name="_replyto" placeholder="Email...">
+            </div>
+          </div>  
+        <div class="form-group">
+          <label for="inputDescription">Description or Enquiry: </label>
+          <textarea class="form-control" id="inputDescription" rows="6" placeholder="Enquiry..."></textarea>
+        </div>
+        <div class="custom-file">
+          <input for="inputFile" type="file" class="custom-file-input" id="customFile" name="upload">
+          <label class="custom-file-label" for="customFile">File if applicable :</label>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex justify-content-center">
+        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+          <button class="btn btn-warning btn-lg px-5 mx-5" type="submit">Send</button>
+    </div>
+</form>
+
+    <br>
+    <br>
+
+    <div class="jumbotron">
+      <h1 id="cv" class="display-2">CV</h1>
+      <p class="lead">If you're interested in seeing my qualifications and a good fit for your company, 
+        you can view my CV below and you can download it as a docx 
+        <a href="Alex Griffin CV.docx" download="Alex Griffin CV Docx">here</a>
+        or as a PDF 
+        <a href="Alex Griffin CV.pdf" download="Alex Griffin CV PDF">here</a>
+      </p>
+      <hr class="my-4">
+      <iframe src="Alex Griffin CV.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="2300px" frameborder="0" style="padding-top:20px;"></iframe>
+    </div>
+
+    <br>
+    <br>
+    <div class="d-flex justify-content-center">
+      <button class="btn btn-warning btn-lg px-5" id="toTopButton" title="Go To Top" onclick="GoToTop()">Back To Top</button>
+    </div>
+
   
- <a href="crowdsim.html">
-  <section id="crowdSim">
-   <h2>Crowd Simulation Android App</h2>
-   <p id="indexBoxText">
-    This Crowd Simulation Android App was developed by me for use in one of my university modules. 
-    It models basic AI crowd simulation algorithms running on an Android Device. 
-    It was created using the Unity Game Engine.
-   </p>
-  </section>
- </a>
   
  <!-- Replaced with Chill Pill
  
@@ -83,71 +323,62 @@
   
  -->
  
- <a href="chillpill.html">
-  <section id="chillPill">
-   <h2>Chill Pill</h2>
-   <p id="indexBoxText">
-    Chill Pill is a physics based mobile arcade game developed in the Unity Game Engine.
-    It was developed in my spare time during lockdown, I started development around the end of April
-    and released it on the Google Play Store on the 17th of June. The game play is very simplistic and arcadey 
-    and was designed to be picked up and put down easily.
-   </p>
-  </section>
- </a>
- 
- <a href="box.html">
-  <section id="box">
-   <h2>Box</h2>
-   <p id="indexBoxText">
-   Box is a 2D physics platformer created using the ODBAR Engine (See ODBAR Engine listing). 
-   Box has the player take control of a sentient box trying to escape an abandoned underwater research facility. 
-   The facility is full of hazards that the player has to carefully dodge and avoid.
-   </p>
-  </section>
- </a>
 
- <a href="odbarengine.html">
-  <section id="odbarEngine">
-   <h2>ODBAR Engine</h2>
-   <p id="indexBoxText">
-   The ODBAR Engine is a game engine that was developed as part of a work simulation module during my time at Staffordshire University. 
-   The ODBAR Engine is primarily aimed at developing platformers, it includes many features that can be used for different types of platformers.
-   </p>
-  </section>
- </a>
-  
- <a href="directx.html">
-  <section id="directX">
-   <h2>Cubes in DirectX</h2>
-   <p id="indexBoxText">
-   
-   </p>
-  </section>
- </a>
- 
- <a href="chatroom.html">
-  <section id="chatroom">
-   <h2>Simple Chatroom Program</h2>
-   <p id="indexBoxText">
-   This simple chatroom project was written in C# and consists of a simple server and client. 
-   These client applications communicate through the server and are able to send and receive messages sent from other client applications. 
-   Each client instance is also able to set a nickname for themselves.
-   </p>
-  </section>
- </a>
 
- <a href="raytrace.html">
-  <section id="rayTrace">
-   <h2>Ray Tracing and Memory Management</h2>
-  </section>
- </a>
- 
- <a href="website.html">
-  <section id="website">
-   <h2>This Website</h2>
-   </section>
- </a>
-</article>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<script>
+  bsCustomFileInput.init()
+
+  var btn = document.getElementById('btnResetForm')
+  var form = document.querySelector('form')
+  btn.addEventListener('click', function() {
+    form.reset()
+  })
+</script>
+
+<script>
+  function GoToTop() 
+  {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
+<script>
+var image =  document.getElementById("imageMyself");
+var text = document.getElementById("meCaption");
+
+function changeImage()
+{
+    if (image.getAttribute('src') == "Images/PictureOfMe2.webp")
+    {
+        image.src = "Images/PictureOfMe2Alt.webp";
+    }
+    else
+    {
+        image.src = "Images/PictureOfMe2.webp";
+    }
+}
+
+function toggleText() 
+{
+  if (text.innerHTML === "Me in Belgium") 
+  {
+    document.getElementById("meCaption").innerHTML = "I've got glasses now, in case you wanted an explanation";
+  } 
+  else 
+  {
+    document.getElementById("meCaption").innerHTML = "Me in Belgium";
+  }
+}
+</script>
 
 </body>
 </html>
